@@ -90,20 +90,51 @@ section h3 {
 }
 
 .activity-card .participants-list {
-  list-style: disc inside;
+  list-style: none;
   margin: 0;
   padding: 0;
   color: #555;
   max-height: 120px;
   overflow: auto;
+  display: block;
 }
 
 .activity-card .participants-list li {
-  padding: 6px 4px;
+  padding: 6px 8px;
   background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(245,245,245,0.6));
-  border-radius: 4px;
-  margin-bottom: 6px;
+  border-radius: 6px;
+  margin-bottom: 8px;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.participant-item .participant-name {
+  flex: 1 1 auto;
+  margin-right: 12px;
+  word-break: break-word;
+}
+
+.delete-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 16px;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.delete-participant:hover,
+.delete-participant:focus {
+  background-color: rgba(198,40,40,0.08);
+  outline: none;
 }
 
 .activity-card .participants .empty {
