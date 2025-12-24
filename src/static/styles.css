@@ -74,6 +74,44 @@ section h3 {
   margin-bottom: 8px;
 }
 
+/* New participants styling */
+.activity-card .participants {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #e6e6e6;
+  display: block;
+}
+
+.activity-card .participants h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+}
+
+.activity-card .participants-list {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+  color: #555;
+  max-height: 120px;
+  overflow: auto;
+}
+
+.activity-card .participants-list li {
+  padding: 6px 4px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(245,245,245,0.6));
+  border-radius: 4px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.activity-card .participants .empty {
+  color: #888;
+  font-style: italic;
+  font-size: 14px;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
